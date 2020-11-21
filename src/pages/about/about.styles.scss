@@ -1,0 +1,69 @@
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background: black;
+    color: aliceblue;
+    padding: 5%;
+    width: 100vw;
+    min-height: 100vh;
+
+
+    .left-container {
+        padding: 10px;
+        max-width: 30%;
+        z-index: 10;
+        background-color: black;
+        border-radius: 10px;
+
+        span {
+            font-size: 4rem;
+            color: red;
+            
+        }
+
+        p {
+            padding-top: 20px;
+            font-size: 1rem;
+            text-align: justify;
+        }
+    }
+
+    .right-container {
+        min-width: 50%;
+        padding: 20px 20px;
+    }
+}
+
+// Media Query: Tablet or Smaller
+
+@media screen and (max-width: 1000px) {
+    .about-container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10%;
+        
+        .left-container {
+        padding: 10px;
+        min-width: 95%;
+
+        span {
+            font-size: 2rem;
+            color: red;
+        }
+
+        p {
+            padding-top: 20px;
+            font-size: 1rem;
+            text-align: justify;
+        }
+    }
+
+    .right-container {
+        min-width: 95%;
+    }
+        
+    }
+}

@@ -1,0 +1,57 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .icon-set {
+        position: absolute;
+        padding-top: 300px;
+
+        .icon {
+            padding: 30px;
+            cursor: pointer;
+
+            &:hover {
+                color: antiquewhite;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .normal-text {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+        line-height: 50px;
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 3px black;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        z-index: 1;
+
+        .name {
+            color: red;
+            font-weight: bold;
+        }
+    }
+}
+
+// Media Query: Tablet or Smaller
+
+@media screen and (max-width: 1000px) {
+    .main-container {
+        .normal-text {
+            font-size: 2rem;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+    }
+}
+

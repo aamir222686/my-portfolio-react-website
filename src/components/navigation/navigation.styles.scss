@@ -1,0 +1,32 @@
+.nav-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 10px;
+    z-index: 10;
+
+    .item {
+        color: white;
+        padding: 30px;
+        cursor: pointer;
+
+        &:hover {
+            color: red;
+            text-decoration: line-through;
+        }
+
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+// Media Query: Tablet or Smaller
+
+@media screen and (max-width: 1000px) {
+    .nav-container {
+        display: none;
+        }
+    }

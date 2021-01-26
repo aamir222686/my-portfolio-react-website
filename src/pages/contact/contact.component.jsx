@@ -3,7 +3,7 @@ import './contact.styles.scss'
 
 const ContactPage = () => (
     <div className='contact-container'>
-        Hey There
+        +91-9663368769 | aamir222686@yahoo.com
     </div>
 );
 
